@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지ex01</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <!-- 폰트   Song Myung -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            mode:'fade',
+            responsive:true,
+            controls:false,
+            auto:true,
+            pause:3000
+          });
+        });
+      </script>
+  
+<style>
+*{margin: 0;border:none;padding: 0;font-family: 'Song Myung';}
+div.image {max-width: 256px;max-height: 256px;background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyLjEyNSA1MTIuMTI1IiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMi4xMjUgNTEyLjEyNSIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMzMwLjk2OCA1MTIuMTI1Yy0yMDUuMTkzLTEuNTQxLTQ0NS41ODUtMzAwLjUyNi0yNjkuOTI1LTQ3Ni4zMyA2LjI0MS02LjM0NCAxMi44NDctMTIuNDQ3IDE5LjYzNC0xOC4xNDEgMTQuMzUzLTEyLjA0MSAzMi41MzgtMTguMjUxIDUxLjE5NC0xNy40ODcgMTguNzMxLjc2NyAzNi4zNDMgOC40OTkgNDkuNTkxIDIxLjc3LjA4Ni4wODYuMTcyLjE3NC4yNTcuMjYybDMzLjgzNiAzNS4xNjFjMzYuNjE4IDM1LjgzIDIzLjY0MSAxMDAuNDQ0LTI0LjA5OSAxMTkuMTQxLTE0Ljc3OSA2LjAyOC0yNC4yMDcgMTEuMzgxLTI2LjcyNiAxMy4xOTItMTguNjMyIDE4Ljk4NS0zMC40OTMgNDkuODMzIDM5LjE5OCAxMTkuNjQ1IDIyLjYxNSAyMi42NTQgNTYuMTEgNTIuNzcxIDg1Ljc2NiA1Mi43NzEgMTIuMDMxIDAgMjMuMDc0LTUuMDkxIDMzLjczNC0xNS41NTggMS4zODctMi4wMzMgNi4xNzgtMTAuMTk1IDEyLjM1Ny0yNS41OTEgMTguNTA2LTQ4LjA2NyA4My4yNDYtNjEuNDMgMTE5LjIwOC0yNC41NTdsMzQuNzUzIDMzLjYzMWMuMDgzLjA4LjE2NS4xNjEuMjQ2LjI0MiAxMy4xOTUgMTMuMjE4IDIwLjkxNiAzMC43ODEgMjEuNzQgNDkuNDU0LjgyNCAxOC42NjEtNS4zMTIgMzYuODM2LTE3LjI3NSA1MS4xNzctNS4zMDggNi4zNjItMTAuOTc3IDEyLjU3Mi0xNi44NTIgMTguNDU3LTQxLjM4NSA0MS40NTctOTEuNDg2IDYyLjc2LTE0Ni42MzcgNjIuNzYxem0tMjAyLjE0OC00NzIuMDcyYy03LjkwNiAwLTE1Ljg1OSAyLjcyOS0yMi40MzUgOC4yNDUtNS44MTUgNC44NzktMTEuNDc4IDEwLjExLTE2LjgzIDE1LjU1LTkzLjY0NSA5NS4xMTQtNDIuMTc2IDIyNS4wMzYgNDcuNzk1IDMxMy45ODUgODkuMTYxIDg4LjcxMiAyMTguNDMgMTM3LjIxNyAzMTEuOTQ4IDQzLjI3IDUuMDM3LTUuMDQ2IDkuODk2LTEwLjM2OSAxNC40NDUtMTUuODIxIDExLjU0NC0xMy44MzcgMTAuNjk2LTMzLjg2LTEuOTUtNDYuNjM4bC0zNC43MzItMzMuNjEyYy0uMDgzLS4wOC0uMTY1LS4xNjEtLjI0Ni0uMjQyLTcuOTYtNy45NzQtMTguODUxLTExLjI1Ny0yOS44NzQtOS4wMDUtMTEuMDU5IDIuMjU3LTE5LjgxOCA5LjU3NS0yNC4wMzMgMjAuMDc2LTIuNzk2IDYuOTY0LTEyLjU0MyAzMC4zMTQtMjAuNTgyIDM4LjM2Ny0xOC40NjkgMTguNS0zOS41NDEgMjcuODgtNjIuNjMxIDI3Ljg4LTQ0LjAyOSAwLTg0LjA5MS0zNC40NzYtMTE0LjA3NS02NC41MTEtNDUuNDk1LTQzLjY0OC05OC4wNzYtMTE4LjA3Ny0zOC43MDQtMTc2LjY2NCA4LjQxNi04LjQzMSAzMi4zMTEtMTguNTY1IDM5LjQzNC0yMS40NyAxMC4zNDctNC4yMiAxNy41NTgtMTIuOTUzIDE5Ljc4My0yMy45NTggMi4yNDItMTEuMDktMS4wNDYtMjIuMDMyLTkuMDIyLTMwLjAyMi0uMDg2LS4wODYtLjE3Mi0uMTc0LS4yNTctLjI2MmwtMzMuODE1LTM1LjE0Yy02LjcwOC02LjY1OC0xNS40MzQtMTAuMDI4LTI0LjIxOS0xMC4wMjh6bTM2My4wNjcgMTk5LjA1M2MtMTAuMjM0IDAtMTguOTU5LTcuODE1LTE5Ljg5Ni0xOC4yMDYtOC42Ny05Ni4xOTgtODQuNzgyLTE3Mi4zMS0xODAuOTc5LTE4MC45NzktMTEuMDAxLS45OTEtMTkuMTE1LTEwLjcxMy0xOC4xMjQtMjEuNzE0Ljk5LTExLjAwMiAxMC43MTktMTkuMTE3IDIxLjcxNC0xOC4xMjQgMTEyLjQ3OCA4LjQxIDIwOC44MTYgMTA0Ljc1IDIxNy4yMjcgMjE3LjIyNi45OTIgMTEuMDAxLTcuMTIzIDIwLjcyMy0xOC4xMjQgMjEuNzE0LS42MS4wNTYtMS4yMTcuMDgzLTEuODE4LjA4M3ptLTE1NS44MjItLjAzYzEwLjQ3OS0zLjQ5NiAxNi4xMzktMTQuODIzIDEyLjY0My0yNS4zMDItNy44NDUtMjMuNTE0LTI2LjI1MS00Mi40MDItNDkuMjM2LTUwLjUyNy0xMC40MTItMy42ODItMjEuODQxIDEuNzc3LTI1LjUyMSAxMi4xOTItMy42ODIgMTAuNDE0IDEuNzc3IDIxLjg0MSAxMi4xOTEgMjUuNTIyIDExLjQ0NiA0LjA0NiAyMC42NTEgMTMuNTY4IDI0LjYyMyAyNS40NzIgMi43OTUgOC4zNzggMTAuNTk3IDEzLjY3NiAxOC45NjkgMTMuNjc2IDIuMDk3LjAwMSA0LjIzMi0uMzMyIDYuMzMxLTEuMDMzem03OC41NzQtLjE3M2MxMC45MzUtMS41NjQgMTguNTMtMTEuNjk2IDE2Ljk2Ny0yMi42MzEtMTAuMDE5LTcwLjAzNy02NS45My0xMjUuOTQ4LTEzNS45NjctMTM1Ljk2Ny0yNi4zOTQtMi43MDctMzEuNzg3IDM0Ljc4Ny01LjY2NCAzOS41OTcgNTIuNTU3IDcuNTE4IDk0LjUxNSA0OS40NzYgMTAyLjAzMyAxMDIuMDMzIDEuNDI3IDkuOTc1IDkuOTgyIDE3LjE3IDE5Ljc3MyAxNy4xNy45NDMuMDAyIDEuODk4LS4wNjUgMi44NTgtLjIwMnoiLz48L3N2Zz4=)}
+li{list-style: none;}
+.wrap{position: relative;width: 860px;margin: 0 auto;}
+.top{
+    width: 860px;
+    height: 30px;
+    background-color: #00488b;
+    color: white;
+    margin: 0 auto;
+}
+.top h1{text-align: center;margin-bottom: 0;margin-top: 50px;font-size: 18px;padding-top: 5px;}
+.title p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+.notice{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.main_logo_left {
+    margin-top: -50px;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+}
+.main_logo_left img {
+    width: 400px;
+    height: 300px;
+    margin-top: 70px;
+}
+.main_logo_left a{text-decoration: none;color: black;}
+
+
+.main_right {
+    padding-left: 10px;
+    position: absolute;
+    width: 50%;
+    right: 0px;
+}
+.start{margin-bottom: 30px;margin-top: 20px;}
+.main_right p,span{
+    line-height: 35px;
+    font-size: 19px;font-weight: bold;}
+.main_right span{color: #0000ff;}
+.img_box{top: 400px;position: relative;}
+.slider{width: 860px;height: 800px;}
+.slider img{width: 100%;height: 800px;}
+.bx-wrapper {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    background: #fff;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.img_list{
+    top: 350px;
+    position: relative;
+    margin-top: -5px;
+}
+.info{position: relative;top: 400px;margin-bottom: 450px;}
+.info_title{font-size: 22px;font-weight: bold;display: flex;color: #444;}
+.info_title span {
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 27px;
+    line-height: 30px;
+}
+.info_box{border: 2px dashed #888;}
+.info_box li,.caution_title li,.caution_notice li{
+    padding-left: 10px;
+    margin: 3px 3px 3px 3px;
+    list-style:none ;  
+    font-weight:700;  
+    border-top: 1px dotted #888;
+    font-size: 16.5px;
+    color: #444;
+}
+.info_box span{font-size: 16.5px;color: #ff0000;}
+.info_box li:first-child{border-top:none;}
+
+.caution_title, .caution_notice {
+    border: 2px dashed #888;
+    margin-top: -1px;
+}
+.caution_notice{border-top: none;}
+.caution_title p, .caution_notice p {
+    text-align: center;
+    font-size: 16.5px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+.caution_title li,.caution_notice li{list-style: none;border: none;line-height: 25px;padding-bottom: 5px;}
+.svs_title{width: 860px;background-color: #666;color: white;text-align: center;padding: 3px 0px;margin-top: 10px;}
+.service01,.service02,.service03,.service04,.service05{width: 860px;height: 250px;border-bottom: 3px dashed #00488b;margin-top: 20px;padding: 0;}
+.s_left01 img,.s_left02 img,.s_left03 img,.s_left04 img,.s_left05 img{
+    padding: 50px 50px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+.s_right01,.s_right02,.s_right03,.s_right04,.s_right05{float: right;width: 580px;}
+.s_right01 img,.s_right02 img,.s_right03 img,.s_right04 img,.s_right05 img{width: 20px;}
+.s_right01 span,.s_right02 span,.s_right03 span,.s_right04 span,.s_right05 span{color: #ff0000;font-size: 20px;}
+.s_title01,.s_title02,.s_title03,.s_title04,.s_title05{font-size: 40px;font-weight: bold;line-height: 40px!important;}
+.s_right01 p,.s_right02 p,.s_right03 p,.s_right04 p,.s_right05 p{font-size: 20px;font-weight: bold;line-height: 30px;}
+.service03{height: 350px;}
+
+
+/* footer */
+footer{width: 860px;text-align: center;padding-top: 30px;display: inline-block;}
+footer p{font-size: 14px;font-weight: bold;margin: 0 auto;}
+footer span{font-size: 14px;}
+</style>    
+</head>
+<body>
+<div class="wrap">
+    <header></header>
+    <section>
+        <div class="title">
+            <p>지에이글로벌 판매상품 상세페이지 ex</p>
+        </div>
+        <div class="top">
+            <h1>회사소개</h1>
+        </div>
+        <div class="notice">
+            <div class="main_logo_left">
+                <a href="http://www.ga-global.co.kr/">
+                <img src="./main_logo.PNG" alt="메인로고">
+                <h3>지에이글로벌로 이동</h2>
+                </a>
+            </div>
+            <div class="main_right">
+            <p class="start"><span>지에이글로벌</span>을 찾아주셔서 감사합니다.</p>
+            <p>저희 회사는 <span>중국, 일본, 태국, 배트남</span>에서 <br>
+            생활/사무용품들을 <span>직접 수입</span>하여 <br>
+            <span>도/소매 유통</span>을 하고 있습니다.</p>
+
+            <p><span>현지</span>에서 제품을 <span>직접 컨택/수입</span>하여<span>저렴</span>하고, <br>
+            <span>질 좋은 상품</span>을 제공해 드리기 위해 더욱 노력하겠습니다.</p>
+            <p>감사합니다.</p>
+            </div>
+        </div>
+        <div class="img_box">
+            <div class="slider">
+                
+                <div><img src="./img/main_img01.jpg" alt="main_img01"></div>
+                <div><img src="./img/bk01.png" alt="bk01"></div>
+                <div><img src="./img/bk02.png" alt="bk02"></div>
+                <div><img src="./img/bk03.png" alt="bk03"></div>
+                <div><img src="./img/bk04.png" alt="bk04"></div>
+                <div><img src="./img/bk05.png" alt="bk05"></div>
+                <div><img src="./img/bk06.png" alt="bk06"></div>
+              </div>
+        </div>
+        <div class="img_list">
+            <img src="./img/main_img02.jpg" alt="main_img02">
+            <img src="./img/main_img03.jpg" alt="main_img03">
+            <img src="./img/main_img04.jpg" alt="main_img04">
+            <img src="./img/main_img05.jpg" alt="main_img05">
+            <img src="./img/main_img06.jpg" alt="main_img06">
+            <img src="./img/main_img07.jpg" alt="main_img07">
+            <img src="./img/main_img08.jpg" alt="main_img08">
+            <img src="./img/main_img09.jpg" alt="main_img09">
+            <img src="./img/main_img10.jpg" alt="main_img10">
+            <img src="./img/main_img11.jpg" alt="main_img11">
+            <img src="./img/main_img12.jpg" alt="main_img12">
+        </div>
+        <div class="info">
+            <div class="info_title">
+                <span>INFO</span><p>상품정보제공 고시 상세정보</p>
+            </div>
+            <div class="info_box">
+                <div class="left_box">
+                    <li class="left">① 품명 및 모델명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 고급 축하 메세지카드</li>
+                    <li class="left">② 규격 및 용량&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 상세페이지내 표기 (<span>재는 위치에 따라 약간의 차이가 있을수있음</span>)</li>
+                    <li class="left">③ 소재/재질&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 종이</li>
+                    <li class="left">④ 제조국/제조사 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 중국 수입제품</li>
+                    <li class="left">⑤ 원산지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  CHINA</li>
+                    <li class="left">⑥ 구성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 제품 1개 (봉투, 카드)</li>
+                    <li class="left">⑦ 색상 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  상세페이지 참조</li>
+                    <li class="left">⑧ 유통기한 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  해당없음</li>
+                    <li class="left">⑨ 인증, 허가사항 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;해당없음</li>
+                    <li class="left">⑩ A/S 책임자와 전화번호 &nbsp;&nbsp;&nbsp;&nbsp; <span>010-2973-2334</span></li>
+                </div>
+            </div>
+        </div>
+        <div class="caution">
+            <div class="caution_title"><p>CAUTION 구매 전 꼭 읽어주세요.</p>
+            <li>① 사용하지 않을 시 습기가 있는 곳에 보관하지 마십시오.</li>
+            <li>② 제품 사이즈는 재는 위치에 따라 약간의 차이가 있습니다.</li>
+            <li>③ 모니터 설정에 따라 밝기와 색감 등 색상이 다르게 보일 수 있습니다.</li>
+            <li>④ 업체의 사정으로 일시적 재고 부족, 주문폭주, 우천, 폭설시 배송이 다소 지연 될 수 있습니다.</li>
+            <li>⑤ 전화 지연시 문의게시판을 이용하시면 빠른 처리가 가능합니다.</li>
+            </div>
+            <div class="caution_notice">
+                
+                <P>NOTICE</P>
+                <P>배송/교환/반품관련 유의사항을 꼭 읽어주세요~!</P>
+                <li>① 사용하지 않을 시 습기가 있는 곳에 보관하지 마십시오.</li>
+                <li>② 제품 사이즈는 재는 위치에 따라 약간의 차이가 있습니다.</li>
+                <li>③ 모니터 설정에 따라 밝기와 색감 등 색상이 다르게 보일 수 있습니다.</li>
+                <li>④ 업체의 사정으로 일시적 재고 부족, 주문폭주, 우천, 폭설시 배송이 다소 지연 될 수 있습니다.</li>
+                <li>⑤ 전화 지연시 문의게시판을 이용하시면 빠른 처리가 가능합니다.</li>
+            </div>
+        </div>
+        <div class="service">
+            <p class="svs_title">CAUTION 주문시 유의사항</p>
+            <div class="service01">
+                <div class="s_left01"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMS45OTkgNTExLjk5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTExLjk5OSA1MTEuOTk5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTIxNC42ODUsNDAyLjgyOGMtMjQuODI5LDAtNDUuMDI5LDIwLjItNDUuMDI5LDQ1LjAyOWMwLDI0LjgyOSwyMC4yLDQ1LjAyOSw0NS4wMjksNDUuMDI5czQ1LjAyOS0yMC4yLDQ1LjAyOS00NS4wMjkNCgkJCUMyNTkuNzEzLDQyMy4wMjgsMjM5LjUxMyw0MDIuODI4LDIxNC42ODUsNDAyLjgyOHogTTIxNC42ODUsNDY3Ljc0MmMtMTAuOTY2LDAtMTkuODg3LTguOTIyLTE5Ljg4Ny0xOS44ODcNCgkJCWMwLTEwLjk2Niw4LjkyMi0xOS44ODcsMTkuODg3LTE5Ljg4N3MxOS44ODcsOC45MjIsMTkuODg3LDE5Ljg4N0MyMzQuNTcyLDQ1OC44MjIsMjI1LjY1LDQ2Ny43NDIsMjE0LjY4NSw0NjcuNzQyeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMzcyLjYzLDQwMi44MjhjLTI0LjgyOSwwLTQ1LjAyOSwyMC4yLTQ1LjAyOSw0NS4wMjljMCwyNC44MjksMjAuMiw0NS4wMjksNDUuMDI5LDQ1LjAyOXM0NS4wMjktMjAuMiw0NS4wMjktNDUuMDI5DQoJCQlDNDE3LjY1OCw0MjMuMDI4LDM5Ny40NTgsNDAyLjgyOCwzNzIuNjMsNDAyLjgyOHogTTM3Mi42Myw0NjcuNzQyYy0xMC45NjYsMC0xOS44ODctOC45MjItMTkuODg3LTE5Ljg4Nw0KCQkJYzAtMTAuOTY2LDguOTIyLTE5Ljg4NywxOS44ODctMTkuODg3YzEwLjk2NiwwLDE5Ljg4Nyw4LjkyMiwxOS44ODcsMTkuODg3QzM5Mi41MTcsNDU4LjgyMiwzODMuNTk1LDQ2Ny43NDIsMzcyLjYzLDQ2Ny43NDJ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zODMuNzE2LDE2NS43NTVIMjAzLjU2N2MtNi45NDMsMC0xMi41NzEsNS42MjgtMTIuNTcxLDEyLjU3MWMwLDYuOTQzLDUuNjI5LDEyLjU3MSwxMi41NzEsMTIuNTcxaDE4MC4xNDkNCgkJCWM2Ljk0MywwLDEyLjU3MS01LjYyOCwxMi41NzEtMTIuNTcxQzM5Ni4yODcsMTcxLjM4MiwzOTAuNjU5LDE2NS43NTUsMzgzLjcxNiwxNjUuNzU1eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMzczLjkxMSwyMzEuMDM1SDIxMy4zNzNjLTYuOTQzLDAtMTIuNTcxLDUuNjI4LTEyLjU3MSwxMi41NzFzNS42MjgsMTIuNTcxLDEyLjU3MSwxMi41NzFoMTYwLjUzNw0KCQkJYzYuOTQzLDAsMTIuNTcxLTUuNjI4LDEyLjU3MS0xMi41NzFDMzg2LjQ4MSwyMzYuNjY0LDM4MC44NTMsMjMxLjAzNSwzNzMuOTExLDIzMS4wMzV6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik01MDYuMzQxLDEwOS43NDRjLTQuNzk0LTUuODg0LTExLjg5OC05LjI1OC0xOS40ODktOS4yNThIOTUuMjc4TDg3LjM3LDYyLjA5N2MtMS42NTEtOC4wMDgtNy4xMTMtMTQuNzMyLTE0LjYxNC0xNy45ODkNCgkJCWwtNTUuMTc3LTIzLjk1Yy02LjM3LTIuNzY3LTEzLjc3MywwLjE1Ni0xNi41MzYsNi41MjRjLTIuNzY2LDYuMzcsMC4xNTcsMTMuNzc0LDYuNTI0LDE2LjUzN0w2Mi43NDUsNjcuMTdsNjAuODI2LDI5NS4yNjENCgkJCWMyLjM5NiwxMS42MjgsMTIuNzUyLDIwLjA2OCwyNC42MjUsMjAuMDY4aDMwMS4xNjZjNi45NDMsMCwxMi41NzEtNS42MjgsMTIuNTcxLTEyLjU3MWMwLTYuOTQzLTUuNjI4LTEyLjU3MS0xMi41NzEtMTIuNTcxDQoJCQlIMTQ4LjE5N2wtNy4zOTktMzUuOTE2SDQ1MS42OWMxMS44NzIsMCwyMi4yMjktOC40NCwyNC42MjQtMjAuMDY4bDM1LjE2My0xNzAuNjc1DQoJCQlDNTEzLjAwOCwxMjMuMjY2LDUxMS4xMzYsMTE1LjYyNyw1MDYuMzQxLDEwOS43NDR6IE00NTEuNjksMjk2LjMwMUgxMzUuNjE5bC0zNS4xNjEtMTcwLjY3NGwzODYuMzkzLDAuMDAxTDQ1MS42OSwyOTYuMzAxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" /></div>
+                <div class="s_right01">
+                    
+                    <p style="margin-top: -7px;" class="s_title01">구매 안내</p>
+                    <p>1) <span>대량 주문, 유사상품 직수입, 실크/로고 인쇄</span> 등 <br>
+                    B2B 납품문의사항은 <span>010-2973-2334</span>로 <br>
+                    직접 <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyLjEyNSA1MTIuMTI1IiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMi4xMjUgNTEyLjEyNSIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMzMwLjk2OCA1MTIuMTI1Yy0yMDUuMTkzLTEuNTQxLTQ0NS41ODUtMzAwLjUyNi0yNjkuOTI1LTQ3Ni4zMyA2LjI0MS02LjM0NCAxMi44NDctMTIuNDQ3IDE5LjYzNC0xOC4xNDEgMTQuMzUzLTEyLjA0MSAzMi41MzgtMTguMjUxIDUxLjE5NC0xNy40ODcgMTguNzMxLjc2NyAzNi4zNDMgOC40OTkgNDkuNTkxIDIxLjc3LjA4Ni4wODYuMTcyLjE3NC4yNTcuMjYybDMzLjgzNiAzNS4xNjFjMzYuNjE4IDM1LjgzIDIzLjY0MSAxMDAuNDQ0LTI0LjA5OSAxMTkuMTQxLTE0Ljc3OSA2LjAyOC0yNC4yMDcgMTEuMzgxLTI2LjcyNiAxMy4xOTItMTguNjMyIDE4Ljk4NS0zMC40OTMgNDkuODMzIDM5LjE5OCAxMTkuNjQ1IDIyLjYxNSAyMi42NTQgNTYuMTEgNTIuNzcxIDg1Ljc2NiA1Mi43NzEgMTIuMDMxIDAgMjMuMDc0LTUuMDkxIDMzLjczNC0xNS41NTggMS4zODctMi4wMzMgNi4xNzgtMTAuMTk1IDEyLjM1Ny0yNS41OTEgMTguNTA2LTQ4LjA2NyA4My4yNDYtNjEuNDMgMTE5LjIwOC0yNC41NTdsMzQuNzUzIDMzLjYzMWMuMDgzLjA4LjE2NS4xNjEuMjQ2LjI0MiAxMy4xOTUgMTMuMjE4IDIwLjkxNiAzMC43ODEgMjEuNzQgNDkuNDU0LjgyNCAxOC42NjEtNS4zMTIgMzYuODM2LTE3LjI3NSA1MS4xNzctNS4zMDggNi4zNjItMTAuOTc3IDEyLjU3Mi0xNi44NTIgMTguNDU3LTQxLjM4NSA0MS40NTctOTEuNDg2IDYyLjc2LTE0Ni42MzcgNjIuNzYxem0tMjAyLjE0OC00NzIuMDcyYy03LjkwNiAwLTE1Ljg1OSAyLjcyOS0yMi40MzUgOC4yNDUtNS44MTUgNC44NzktMTEuNDc4IDEwLjExLTE2LjgzIDE1LjU1LTkzLjY0NSA5NS4xMTQtNDIuMTc2IDIyNS4wMzYgNDcuNzk1IDMxMy45ODUgODkuMTYxIDg4LjcxMiAyMTguNDMgMTM3LjIxNyAzMTEuOTQ4IDQzLjI3IDUuMDM3LTUuMDQ2IDkuODk2LTEwLjM2OSAxNC40NDUtMTUuODIxIDExLjU0NC0xMy44MzcgMTAuNjk2LTMzLjg2LTEuOTUtNDYuNjM4bC0zNC43MzItMzMuNjEyYy0uMDgzLS4wOC0uMTY1LS4xNjEtLjI0Ni0uMjQyLTcuOTYtNy45NzQtMTguODUxLTExLjI1Ny0yOS44NzQtOS4wMDUtMTEuMDU5IDIuMjU3LTE5LjgxOCA5LjU3NS0yNC4wMzMgMjAuMDc2LTIuNzk2IDYuOTY0LTEyLjU0MyAzMC4zMTQtMjAuNTgyIDM4LjM2Ny0xOC40NjkgMTguNS0zOS41NDEgMjcuODgtNjIuNjMxIDI3Ljg4LTQ0LjAyOSAwLTg0LjA5MS0zNC40NzYtMTE0LjA3NS02NC41MTEtNDUuNDk1LTQzLjY0OC05OC4wNzYtMTE4LjA3Ny0zOC43MDQtMTc2LjY2NCA4LjQxNi04LjQzMSAzMi4zMTEtMTguNTY1IDM5LjQzNC0yMS40NyAxMC4zNDctNC4yMiAxNy41NTgtMTIuOTUzIDE5Ljc4My0yMy45NTggMi4yNDItMTEuMDktMS4wNDYtMjIuMDMyLTkuMDIyLTMwLjAyMi0uMDg2LS4wODYtLjE3Mi0uMTc0LS4yNTctLjI2MmwtMzMuODE1LTM1LjE0Yy02LjcwOC02LjY1OC0xNS40MzQtMTAuMDI4LTI0LjIxOS0xMC4wMjh6bTM2My4wNjcgMTk5LjA1M2MtMTAuMjM0IDAtMTguOTU5LTcuODE1LTE5Ljg5Ni0xOC4yMDYtOC42Ny05Ni4xOTgtODQuNzgyLTE3Mi4zMS0xODAuOTc5LTE4MC45NzktMTEuMDAxLS45OTEtMTkuMTE1LTEwLjcxMy0xOC4xMjQtMjEuNzE0Ljk5LTExLjAwMiAxMC43MTktMTkuMTE3IDIxLjcxNC0xOC4xMjQgMTEyLjQ3OCA4LjQxIDIwOC44MTYgMTA0Ljc1IDIxNy4yMjcgMjE3LjIyNi45OTIgMTEuMDAxLTcuMTIzIDIwLjcyMy0xOC4xMjQgMjEuNzE0LS42MS4wNTYtMS4yMTcuMDgzLTEuODE4LjA4M3ptLTE1NS44MjItLjAzYzEwLjQ3OS0zLjQ5NiAxNi4xMzktMTQuODIzIDEyLjY0My0yNS4zMDItNy44NDUtMjMuNTE0LTI2LjI1MS00Mi40MDItNDkuMjM2LTUwLjUyNy0xMC40MTItMy42ODItMjEuODQxIDEuNzc3LTI1LjUyMSAxMi4xOTItMy42ODIgMTAuNDE0IDEuNzc3IDIxLjg0MSAxMi4xOTEgMjUuNTIyIDExLjQ0NiA0LjA0NiAyMC42NTEgMTMuNTY4IDI0LjYyMyAyNS40NzIgMi43OTUgOC4zNzggMTAuNTk3IDEzLjY3NiAxOC45NjkgMTMuNjc2IDIuMDk3LjAwMSA0LjIzMi0uMzMyIDYuMzMxLTEuMDMzem03OC41NzQtLjE3M2MxMC45MzUtMS41NjQgMTguNTMtMTEuNjk2IDE2Ljk2Ny0yMi42MzEtMTAuMDE5LTcwLjAzNy02NS45My0xMjUuOTQ4LTEzNS45NjctMTM1Ljk2Ny0yNi4zOTQtMi43MDctMzEuNzg3IDM0Ljc4Ny01LjY2NCAzOS41OTcgNTIuNTU3IDcuNTE4IDk0LjUxNSA0OS40NzYgMTAyLjAzMyAxMDIuMDMzIDEuNDI3IDkuOTc1IDkuOTgyIDE3LjE3IDE5Ljc3MyAxNy4xNy45NDMuMDAyIDEuODk4LS4wNjUgMi44NTgtLjIwMnoiLz48L3N2Zz4=" /> &nbsp;/&nbsp; <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyIDUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0zOTIgNDU4aC0yNzJjLTY2LjE2OCAwLTEyMC01My44MzItMTIwLTEyMHYtMTY0YzAtNjYuMTY4IDUzLjgzMi0xMjAgMTIwLTEyMGgyNzJjNjYuMTY4IDAgMTIwIDUzLjgzMiAxMjAgMTIwdjE2NGMwIDY2LjE2OC01My44MzIgMTIwLTEyMCAxMjB6bS0yNzItMzY0Yy00NC4xMTIgMC04MCAzNS44ODgtODAgODB2MTY0YzAgNDQuMTEyIDM1Ljg4OCA4MCA4MCA4MGgyNzJjNDQuMTEyIDAgODAtMzUuODg4IDgwLTgwdi0xNjRjMC00NC4xMTItMzUuODg4LTgwLTgwLTgwem0yMDkuMjg2IDE5Ny40MDYgOTguODU1LTc1LjUxMmM4Ljc3OC02LjcwNSAxMC40NTgtMTkuMjU2IDMuNzUzLTI4LjAzNC02LjcwNi04Ljc3OC0xOS4yNTYtMTAuNDU4LTI4LjAzNC0zLjc1M2wtOTguODQzIDc1LjUwM2MtMjguNTQxIDIxLjc2OS02OC40IDIxLjc4NS05Ni45Ni4wNTVsLTk1Ljc4MS03NC40NTVjLTguNzIxLTYuNzgtMjEuMjg3LTUuMjA1LTI4LjA2NSAzLjUxNi02Ljc3OSA4LjcyMS01LjIwNSAyMS4yODYgMy41MTYgMjguMDY1bDk1Ljg1NSA3NC41MTJjLjA0OC4wMzguMDk3LjA3NS4xNDYuMTEyIDIxLjQyNCAxNi4zNCA0Ny4wOTQgMjQuNTA5IDcyLjc3IDI0LjUwOXM1MS4zNTctOC4xNzQgNzIuNzg4LTI0LjUxOHoiLz48L3N2Zz4=" /> &nbsp; 요청드립니다.</p>
+                    <p style="padding-bottom: 15px;">2) <span>랜덤 출고 상품</span>이라도 배송요청란에 요청사항 기재해주시면 <br>
+                    보유 재고 범위에서 <span>맞춤배송</span>해드립니다. <br>
+                    (<span>단,재고 품절시 랜덤 출고입니다!</span>)</p>
+                </div>
+            </div>
+            <div class="service02">
+                <div class="s_left02"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTAuNTY3IDUxMC41NjciIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEwLjU2NyA1MTAuNTY3IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnPjxwYXRoIGQ9Im0zNzIuNjY4IDI5NC4yMjNoNy4zMmM0LjE0MyAwIDcuNS0zLjM1OCA3LjUtNy41cy0zLjM1Ny03LjUtNy41LTcuNWgtNy4zMmMtNC4xNDMgMC03LjUgMy4zNTgtNy41IDcuNXMzLjM1NyA3LjUgNy41IDcuNXoiLz48cGF0aCBkPSJtNTEwLjEyMiAyNTYuOTdjMC0xNS4zMjItMTEuNDQxLTI4LjQ5MS0yNi42MTUtMzAuNjMxbC00OS45ODQtNy4wNDgtMzcuNjA1LTM5LjI0MmM5LjcxNi0zLjY0NyAxNi42NS0xMy4wMjkgMTYuNjUtMjQuMDAzdi02My4wNTFjMC0xNC4xMzMtMTEuNDk4LTI1LjYzMS0yNS42MzEtMjUuNjMxaC0zMjUuNTk3Yy00LjE0MyAwLTcuNSAzLjM1OC03LjUgNy41czMuMzU3IDcuNSA3LjUgNy41aDMyNS41OTdjNS44NjIgMCAxMC42MzEgNC43NjkgMTAuNjMxIDEwLjYzMXY5LjU5MmgtNTcuMjMyYy00LjE0MyAwLTcuNSAzLjM1OC03LjUgNy41czMuMzU3IDcuNSA3LjUgNy41aDU3LjIzMnYxNS40OTloLTU3LjIzMmMtNC4xNDMgMC03LjUgMy4zNTgtNy41IDcuNXMzLjM1NyA3LjUgNy41IDcuNWg1Ny4yMzJ2Ny45NTljMCA1Ljg2Mi00Ljc2OSAxMC42MzEtMTAuNjMxIDEwLjYzMWgtNDAuMTY1Yy03LjgzNiAwLTE0LjIxMSA2LjM3NS0xNC4yMTEgMTQuMjExdjE2NS4wMjFoLTMzLjYwOWMtNC4xNDMgMC03LjUgMy4zNTgtNy41IDcuNXMzLjM1NyA3LjUgNy41IDcuNWg1MC4yMThjLTIuMzg0IDUuMTgyLTQuMDIzIDEwLjc2Ny00Ljc4NSAxNi42MjVoLTEzMy40OTNjLS43NjItNS44NTgtMi40LTExLjQ0My00Ljc4NS0xNi42MjVoNjIuODQ0YzQuMTQzIDAgNy41LTMuMzU4IDcuNS03LjVzLTMuMzU3LTcuNS03LjUtNy41aC03Mi43OTdjLTEwLjcwMy0xMS42OTQtMjYuMTIyLTE5LjA0NS00My4yMzQtMTkuMDQ1cy0zMi41MzEgNy4zNTEtNDMuMjM0IDE5LjA0NWgtOTQuNjg2di0yNjMuNTQ1aDE2LjM0YzQuMTQzIDAgNy41LTMuMzU4IDcuNS03LjVzLTMuMzU3LTcuNS03LjUtNy41aC0xNy4xMjljLTcuODM2IDAtMTQuMjExIDYuMzc1LTE0LjIxMSAxNC4yMTJsLjAyIDI5NS40YzAgOC41NzkgNi45OCAxNS41NTkgMTUuNTU5IDE1LjU1OWg3OS4zN2MzLjcxMiAyOC41NDMgMjguMjg1IDUwLjY3IDU3Ljk3MiA1MC42N3M1NC4yNi0yMi4xMjcgNTcuOTcyLTUwLjY3aDEzMy40OTJjMy43MTIgMjguNTQzIDI4LjI4NiA1MC42NyA1Ny45NzMgNTAuNjdzNTQuMjYtMjIuMTI3IDU3Ljk3Mi01MC42N2gzNC4wMzVjOC45MzUgMCAxNi4yMDMtNy4yNjkgMTYuMjAzLTE2LjIwNHptLTE1IC4wMzQuMTA0IDIyLjc4aC0yMC4yMjhjLTIuNDgyIDAtNC41MDEtMi4wMTktNC41MDEtNC41di0zNS42M2wxMC45MTUgMS41MzljNy44MTYgMS4xMDEgMTMuNzEgNy44ODQgMTMuNzEgMTUuODExem0tMTE4LjE5Ni03NS4zMjhjLjI3LjQzMy41ODcuODQ2Ljk1NCAxLjIyOWw0NC4xOTYgNDYuMTIxYy0uMTAxIDEuNzQ2LS4xODkgNC4xMzQtLjI2NSA3LjUzMi0uMTUyIDYuODM3LTUuODM3IDEyLjQtMTIuNjcxIDEyLjRoLTYxLjU4di02Ny4yODJ6bS0yOS4zNjUgMTY0LjIzM3YtODEuOTVoNjEuNThjMTQuOTI0IDAgMjcuMzM1LTEyLjE0MiAyNy42NjctMjcuMDY1LjAxNi0uNzE4LjAzMy0xLjM3NC4wNS0xLjk4M2wxOC42NCAyLjYyOHYzNy43NDVjMCAxMC43NTIgOC43NDggMTkuNSAxOS41MDEgMTkuNWgyMC4yOTdsLjIzNSA1MS4xMjVoLTQ5LjkzOGMtMTAuNzAzLTExLjY5NC0yNi4xMjItMTkuMDQ1LTQzLjIzNC0xOS4wNDUtMTcuMTEzIDAtMzIuNTMxIDcuMzUxLTQzLjIzNSAxOS4wNDV6bS0zMzIuNTQyIDMxLjA2NnYtMTYuMDY2aDg0LjcxM2MtMi4zODQgNS4xODItNC4wMjMgMTAuNzY3LTQuNzg1IDE2LjYyNWgtNzkuMzdjLS4zMDYgMC0uNTU4LS4yNTEtLjU1OC0uNTU5em0xMzcuOTAxIDUxLjIyOWMtMjMuOTcyIDAtNDMuNDc1LTE5LjM2Ni00My40NzUtNDMuMTdzMTkuNTAzLTQzLjE3IDQzLjQ3NS00My4xNyA0My40NzUgMTkuMzY2IDQzLjQ3NSA0My4xNy0xOS41MDMgNDMuMTctNDMuNDc1IDQzLjE3em0yNDkuNDM3IDBjLTIzLjk3MyAwLTQzLjQ3Ni0xOS4zNjYtNDMuNDc2LTQzLjE3czE5LjUwMy00My4xNyA0My40NzYtNDMuMTdjMjMuOTcyIDAgNDMuNDc1IDE5LjM2NiA0My40NzUgNDMuMTdzLTE5LjUwMyA0My4xNy00My40NzUgNDMuMTd6bTkzLjIxLTUxLjg3NGMwIC42NjMtLjU0IDEuMjA0LTEuMjAzIDEuMjA0aC0zNC4wMzRjLS43NjItNS44NTgtMi40LTExLjQ0My00Ljc4NS0xNi42MjVoNDAuMDIzdjE1LjQyMXoiLz48cGF0aCBkPSJtNDAyLjM1NyAzNTkuNzU2Yy0xMy45OTcgMC0yNS4zODUgMTEuMzM5LTI1LjM4NSAyNS4yNzggMCAxMy45MzggMTEuMzg4IDI1LjI3NyAyNS4zODUgMjUuMjc3czI1LjM4NC0xMS4zMzkgMjUuMzg0LTI1LjI3N2MwLTEzLjkzOS0xMS4zODctMjUuMjc4LTI1LjM4NC0yNS4yNzh6bTAgMzUuNTU1Yy01LjcyNyAwLTEwLjM4NS00LjYxLTEwLjM4NS0xMC4yNzdzNC42NTgtMTAuMjc4IDEwLjM4NS0xMC4yNzhjNS43MjYgMCAxMC4zODQgNC42MTEgMTAuMzg0IDEwLjI3OHMtNC42NTggMTAuMjc3LTEwLjM4NCAxMC4yNzd6Ii8+PHBhdGggZD0ibTE1Mi45MiAzNTkuNzU2Yy0xMy45OTcgMC0yNS4zODUgMTEuMzM5LTI1LjM4NSAyNS4yNzggMCAxMy45MzggMTEuMzg4IDI1LjI3NyAyNS4zODUgMjUuMjc3czI1LjM4NC0xMS4zMzkgMjUuMzg0LTI1LjI3N2MwLTEzLjkzOS0xMS4zODctMjUuMjc4LTI1LjM4NC0yNS4yNzh6bTAgMzUuNTU1Yy01LjcyNyAwLTEwLjM4NS00LjYxLTEwLjM4NS0xMC4yNzdzNC42NTgtMTAuMjc4IDEwLjM4NS0xMC4yNzhjNS43MjYgMCAxMC4zODQgNC42MTEgMTAuMzg0IDEwLjI3OHMtNC42NTkgMTAuMjc3LTEwLjM4NCAxMC4yNzd6Ii8+PHBhdGggZD0ibTU5LjA2IDEzOC41NDFoMzIuNDJjNC4xNDMgMCA3LjUtMy4zNTggNy41LTcuNXMtMy4zNTctNy41LTcuNS03LjVoLTMyLjQyYy00LjE0MyAwLTcuNSAzLjM1OC03LjUgNy41czMuMzU3IDcuNSA3LjUgNy41eiIvPjxwYXRoIGQ9Im01OS4wNiAxNzEuODY4aDgxLjA5MWM0LjE0MyAwIDcuNS0zLjM1OCA3LjUtNy41cy0zLjM1Ny03LjUtNy41LTcuNWgtODEuMDkxYy00LjE0MyAwLTcuNSAzLjM1OC03LjUgNy41czMuMzU3IDcuNSA3LjUgNy41eiIvPjxwYXRoIGQ9Im01OS4wNiAyMDUuMTk0aDgxLjA5MWM0LjE0MyAwIDcuNS0zLjM1OCA3LjUtNy41cy0zLjM1Ny03LjUtNy41LTcuNWgtODEuMDkxYy00LjE0MyAwLTcuNSAzLjM1OC03LjUgNy41czMuMzU3IDcuNSA3LjUgNy41eiIvPjxwYXRoIGQ9Im01OS4wNiAyMzguNTIxaDgxLjA5MWM0LjE0MyAwIDcuNS0zLjM1OCA3LjUtNy41cy0zLjM1Ny03LjUtNy41LTcuNWgtODEuMDkxYy00LjE0MyAwLTcuNSAzLjM1OC03LjUgNy41czMuMzU3IDcuNSA3LjUgNy41eiIvPjwvZz48L3N2Zz4=" /></div>
+                <div class="s_right02">
+                    
+                    <p class="s_title02">배송 안내</p>
+                    <p>1) <span>오전 12시 이전 주문/결제</span>완료건은 <span>당일 출고</span>을 약속드립니다.<br>
+                    <p>2) 오전 12시 이후 완료건은 <span>익일 발송</span>됩니다. <span>(주말/공휴일 제외)</span></p>
+                    <p>3) <span>묶음배송</span>은 <span>출고지가 같은 상품</span>에 한하여 가능합니다.</p>
+                    <p>4) 배송기간은 택배사의 사정으로 2~4일 소요될 수 있습니다.</p>
+                    <p>5) 주문폭주로 일시품절시 재수입으로 약 2주 늦어질 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="service03">
+                <div class="s_left03"><img style="margin-top: 45px;" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMXB0IiB2aWV3Qm94PSIwIDEgNTExLjk5OTgxIDUxMSIgd2lkdGg9IjUxMXB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im01MDYuODEyNSAxMTEuMjMwNDY5LTE5OS40MDYyNS0xMDkuNDk2MDk0Yy0yLjk5NjA5NC0xLjY0NDUzMTItNi42Mjg5MDYtMS42NDQ1MzEyLTkuNjI1IDBsLTc1LjE2MDE1NiA0MS4yNjk1MzFjLTEuNTg1OTM4LjQxNzk2OS0zLjA2NjQwNiAxLjIxNDg0NC00LjI5Mjk2OSAyLjM1OTM3NWwtMTE5Ljk0OTIxOSA2NS44NjcxODhjLTMuMTk5MjE4IDEuNzUzOTA2LTUuMTg3NSA1LjExMzI4MS01LjE4NzUgOC43NjU2MjV2MTMyLjQyOTY4N2MtMjAuMjM0Mzc1IDYuMzI4MTI1LTM4Ljc3NzM0NCAxNy40ODgyODEtNTQuMTk1MzEyIDMyLjkxMDE1Ny00MC4xODc1IDQwLjE4MzU5My01MC40MzM1OTQgMTAxLjQ3MjY1Ni0yNS40OTYwOTQgMTUyLjUwNzgxMiAyLjQyMTg3NSA0Ljk2MDkzOCA4LjQxMDE1NiA3LjAxOTUzMSAxMy4zNzEwOTQgNC41OTM3NSA0Ljk2NDg0NC0yLjQyNTc4MSA3LjAxOTUzMS04LjQxNDA2MiA0LjU5NzY1Ni0xMy4zNzUtMjEuMTg3NS00My4zNjMyODEtMTIuNDgwNDY5LTk1LjQzNzUgMjEuNjY3OTY5LTEyOS41ODU5MzggMjEuMzU1NDY5LTIxLjM1NTQ2OCA0OS43NDYwOTMtMzMuMTE3MTg3IDc5Ljk0NTMxMi0zMy4xMTcxODdzNTguNTg5ODQ0IDExLjc2MTcxOSA3OS45NDUzMTMgMzMuMTE3MTg3YzIxLjM1MTU2MiAyMS4zNTE1NjMgMzMuMTEzMjgxIDQ5Ljc0MjE4OCAzMy4xMTMyODEgNzkuOTQxNDA3cy0xMS43NjE3MTkgNTguNTg5ODQzLTMzLjExNzE4NyA3OS45NDUzMTJjLTM0LjE0ODQzOCAzNC4xNDg0MzgtODYuMjIyNjU3IDQyLjg1NTQ2OS0xMjkuNTg1OTM4IDIxLjY2Nzk2OS00Ljk2MDkzOC0yLjQyNTc4MS0xMC45NDkyMTktLjM2NzE4OC0xMy4zNzEwOTQgNC41OTM3NS0yLjQyNTc4MSA0Ljk2NDg0NC0uMzcxMDk0IDEwLjk1MzEyNSA0LjU5Mzc1IDEzLjM3NSAxOC41ODk4NDQgOS4wODU5MzggMzguNTM1MTU2IDEzLjUgNTguMzM1OTM4IDEzLjUgMzQuNTQyOTY4LS4wMDM5MDYgNjguNjI1LTEzLjQ0OTIxOSA5NC4xNzE4NzUtMzguOTk2MDk0IDExLjcxNDg0My0xMS43MTQ4NDQgMjAuOTcyNjU2LTI1LjIzMDQ2OCAyNy41MjM0MzctMzkuOTIxODc1bDQzLjA4OTg0NCAyMy42NjAxNTdjMS41LjgyNDIxOCAzLjE1NjI1IDEuMjM0Mzc0IDQuODEyNSAxLjIzNDM3NHMzLjMxNjQwNi0uNDEwMTU2IDQuODEyNS0xLjIzNDM3NGwxOTkuNDA2MjUtMTA5LjQ5MjE4OGMzLjE5OTIxOS0xLjc1NzgxMiA1LjE4NzUtNS4xMTcxODggNS4xODc1LTguNzY1NjI1di02OS40OTYwOTRjMC01LjUyMzQzNy00LjQ3NjU2Mi0xMC0xMC0xMHMtMTAgNC40NzY1NjMtMTAgMTB2NjMuNTc4MTI1bC0xNzkuMzc1IDk4LjQ5NjA5NHYtMTk2LjE3MTg3NWw1OS4xOTkyMTktMzIuNTA3ODEzdjUxLjUzMTI1YzAgMy41MzkwNjMgMS44NjcxODcgNi44MTI1IDQuOTEwMTU2IDguNjA5Mzc2IDEuNTcwMzEzLjkyNTc4MSAzLjMyODEyNSAxLjM5MDYyNCA1LjA4OTg0NCAxLjM5MDYyNCAxLjY1NjI1IDAgMy4zMTY0MDYtLjQxMDE1NiA0LjgyMDMxMi0xLjIzODI4MWw0Mi43MzA0NjktMjMuNTE5NTMxYzMuMTk1MzEyLTEuNzU3ODEyIDUuMTc1NzgxLTUuMTEzMjgxIDUuMTc1NzgxLTguNzU3ODEydi02Mi40NjA5MzhsNTcuNDQ5MjE5LTMxLjU0Mjk2OXY1Mi41OTc2NTdjMCA1LjUyMzQzNyA0LjQ3NjU2MiAxMCAxMCAxMHMxMC00LjQ3NjU2MyAxMC0xMHYtNjkuNDk2MDk0YzAtMy42NDg0MzgtMS45ODgyODEtNy4wMTE3MTktNS4xODc1LTguNzY1NjI1em0tMjA0LjIxODc1LTg5LjMyNDIxOSAxNzguNjI4OTA2IDk4LjA4OTg0NC01Ni4zNDc2NTYgMzAuOTQxNDA2LTE3OC42Mjg5MDYtOTguMDg5ODQ0em0wIDE5Ni4xNzU3ODEtMTc4LjYyODkwNi05OC4wODU5MzcgNTguNDE0MDYyLTMyLjA3ODEyNSAxNzguNjMyODEzIDk4LjA4NTkzN3ptNzkuMTkxNDA2LTQzLjQ4NDM3NS0xNzguNjI4OTA2LTk4LjA4NTkzNyAyMi4zMTI1LTEyLjI1MzkwNyAxNzguNjMyODEyIDk4LjA4NTkzOHptLTE1NC42MTcxODcgMTEwLjczODI4MmMtMjUuMTMyODEzLTI1LjEzMjgxMy01OC41NDY4NzUtMzguOTcyNjU3LTk0LjA4NTkzOC0zOC45NzI2NTctNi43MjI2NTYgMC0xMy4zNjMyODEuNDk2MDk0LTE5Ljg5MDYyNSAxLjQ2ODc1di0xMTAuOTM3NWwxNzkuNDM3NSA5OC41MzEyNXYxOTYuMTcxODc1bC0zMS4xNDQ1MzEtMTcuMTAxNTYyYzMuMDY2NDA2LTExLjI4OTA2MyA0LjY1MjM0NC0yMy4wNjI1IDQuNjUyMzQ0LTM1LjA3ODEyNSAwLTM1LjUzOTA2My0xMy44Mzk4NDQtNjguOTUzMTI1LTM4Ljk2ODc1LTk0LjA4MjAzMXptMTg3LjM4NjcxOS02MC4zNDc2NTctMjIuNzMwNDY5IDEyLjUxMTcxOXYtNDUuNTk3NjU2bDIyLjczMDQ2OS0xMi40ODA0Njl6bTAgMCIvPjxwYXRoIGQ9Im01MDIgMjE5LjQ0MTQwNmMtMi42Mjg5MDYgMC01LjIxMDkzOCAxLjA3MDMxMy03LjA3MDMxMiAyLjkyOTY4OC0xLjg1OTM3NiAxLjg1OTM3NS0yLjkyOTY4OCA0LjQzNzUtMi45Mjk2ODggNy4wNzAzMTIgMCAyLjYyODkwNiAxLjA3MDMxMiA1LjIwNzAzMiAyLjkyOTY4OCA3LjA2NjQwNiAxLjg1OTM3NCAxLjg2MzI4MiA0LjQ0MTQwNiAyLjkyOTY4OCA3LjA3MDMxMiAyLjkyOTY4OHM1LjIxMDkzOC0xLjA2NjQwNiA3LjA3MDMxMi0yLjkyOTY4OGMxLjg1OTM3Ni0xLjg1OTM3NCAyLjkyOTY4OC00LjQzNzUgMi45Mjk2ODgtNy4wNjY0MDYgMC0yLjYzMjgxMi0xLjA3MDMxMi01LjIxMDkzNy0yLjkyOTY4OC03LjA3MDMxMi0xLjg1OTM3NC0xLjg1OTM3NS00LjQ0MTQwNi0yLjkyOTY4OC03LjA3MDMxMi0yLjkyOTY4OHptMCAwIi8+PHBhdGggZD0ibTk5LjQ1NzAzMSAzODkuNDE3OTY5YzIuNTU4NTk0IDAgNS4xMjEwOTQtLjk3NjU2MyA3LjA3MDMxMy0yLjkyNTc4MSAzLjkwNjI1LTMuOTA2MjUgMy45MDYyNS0xMC4yMzgyODIgMC0xNC4xNDQ1MzJsLTYuOTI1NzgyLTYuOTI5Njg3aDU5LjEwMTU2M2MxNC4zMzU5MzcgMCAyNiAxMS42NjQwNjIgMjYgMjYgMCAxNC4zMzU5MzctMTEuNjY0MDYzIDI2LTI2IDI2aC0zNS4wMTk1MzFjLTUuNTIzNDM4IDAtMTAgNC40NzY1NjItMTAgMTAgMCA1LjUxOTUzMSA0LjQ3NjU2MiA5Ljk5NjA5MyAxMCA5Ljk5NjA5M2gzNS4wMTk1MzFjMjUuMzYzMjgxIDAgNDYtMjAuNjMyODEyIDQ2LTQ1Ljk5NjA5M3MtMjAuNjM2NzE5LTQ1Ljk5NjA5NC00Ni00NS45OTYwOTRoLTU5LjEwMTU2M2w2LjkyNTc4Mi02LjkyOTY4N2MzLjkwNjI1LTMuOTA2MjUgMy45MDYyNS0xMC4yMzgyODIgMC0xNC4xNDQ1MzItMy45MDIzNDQtMy45MDIzNDQtMTAuMjM0Mzc1LTMuOTAyMzQ0LTE0LjE0MDYyNSAwbC0yNCAyNGMtMy45MDIzNDQgMy45MDYyNS0zLjkwMjM0NCAxMC4yMzgyODIgMCAxNC4xNDQ1MzJsMjQgMjMuOTk2MDkzYzEuOTUzMTI1IDEuOTUzMTI1IDQuNTExNzE5IDIuOTI5Njg4IDcuMDcwMzEyIDIuOTI5Njg4em0wIDAiLz48cGF0aCBkPSJtNDYuMDc0MjE5IDQ3Ni40NDkyMTljLTIuODQzNzUgMC01LjY2Nzk2OS0xLjIxMDkzOC03LjY0MDYyNS0zLjU1ODU5NGwtLjAxOTUzMi0uMDIzNDM3Yy0zLjU1NDY4Ny00LjIyNjU2My0zLjAwNzgxMi0xMC41MzEyNSAxLjIxODc1LTE0LjA4NTkzOCA0LjIyNjU2My0zLjU1ODU5NCAxMC41MzUxNTctMy4wMTE3MTkgMTQuMDg5ODQ0IDEuMjE0ODQ0IDMuNTUwNzgyIDQuMjMwNDY4IDMuMDE1NjI1IDEwLjU0Njg3NS0xLjIxMDkzNyAxNC4xMDE1NjItMS44Nzg5MDcgMS41NzgxMjUtNC4xNjQwNjMgMi4zNTE1NjMtNi40Mzc1IDIuMzUxNTYzem0wIDAiLz48L3N2Zz4=" /></div>
+                <div class="s_right03">
+                    
+                    <p class="s_title03">교환/반품 안내</p>
+                    <p>1) 교환/반품 시에는<span>반송지</span>를 <span>필히 확인</span>하고 보내주시기 바랍니다. <br>
+                    <p>2) <span>단순변심</span>에 의한 교환/반품은 <span>포장이 유지된 상태</span>만 가능합니다.</p>
+                    <p>3) 교환/반품은 <span>왕복배송이 6천원</span>이 발생하므로 신중히 결정바랍니다.</p>
+                    <p>4) 분실우려로 택배박스 내부 <span>배송료 동봉</span>은 <span>인정하지 않습니다.</span></p>
+                    <p>5) 제품 하자의 경우 <span>100% 무료 교환/반품처리</span> 해드립니다.</p>
+                    <p>6) 하기와 같은 경우 교환/반품이 불가합니다.</p>
+                    <p style="padding-left: 10px;">-기간경과 : 전자상거래법에 의거 상품 수령 후 7일 경과한 경우.</p>
+                    <p style="padding-left: 10px;">- 상품훼손 : 제품 개볼/사용, Tag제거하여 재판매 불가한 경우.</p>
+                    <p style="padding-left: 10px;">- 미정산건 : 교환/반품에 발생한 배송비를 지불하지 않은 경우.</p>
+                </div>
+            </div>
+            <div class="service04">
+                <div class="s_left04"><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9Im91dGxpbmUiPjxwYXRoIGQ9Im0yOS42NTcgMjg1LjY1NyAxMS4xNDMtMTEuMTM4YTIxNi4wMTkgMjE2LjAxOSAwIDAgMCA0MjguNjY1IDE0LjcgOCA4IDAgMCAwIC0xNS44MTMtMi40NDIgMjAwLjAxOSAyMDAuMDE5IDAgMCAxIC0zOTYuNjItMTAuNDMybDkuMzExIDkuMzEyYTggOCAwIDEgMCAxMS4zMTQtMTEuMzE0bC0yNC0yNGE4IDggMCAwIDAgLTExLjMxNCAwbC0yNCAyNGE4IDggMCAwIDAgMTEuMzE0IDExLjMxNHoiLz48cGF0aCBkPSJtNDgyLjM0MyAyMjYuMzQzLTExLjE0IDExLjE0YTIxNi4wMTggMjE2LjAxOCAwIDAgMCAtNDI4LjY2My0xNC43IDggOCAwIDAgMCAxNS44MTMgMi40NDIgMjAwLjAyMyAyMDAuMDIzIDAgMCAxIDM5Ni42MjIgMTAuNDQxbC05LjMxOC05LjMxOWE4IDggMCAwIDAgLTExLjMxNCAxMS4zMTRsMjQgMjRhOCA4IDAgMCAwIDExLjMxNCAwbDI0LTI0YTggOCAwIDAgMCAtMTEuMzE0LTExLjMxNHoiLz48cGF0aCBkPSJtMzAxLjExIDM0Mi4xNTQuMDEyLS4wMDhzNDguMjUxLTQwLjIyMSA0OC4zNTYtNDAuMzI2YTcuOTcyIDcuOTcyIDAgMCAwIDIuNTIyLTUuODJzLS4xOS0xMjEuODEyLS4zNDMtMTIyLjMxOGE4IDggMCAwIDAgLTcuNjU3LTUuNjgyaC0xMjhhNy45OTMgNy45OTMgMCAwIDAgLTQuNDM4IDEuMzQ0bC00OCAzMmE3Ljk3OCA3Ljk3OCAwIDAgMCAtMy40OTEgNS43OTRjLS4wMjIuMTI4LS4wMzYuMjc2LS4wNDcuNDMgMCAuMS0uMDE1LjItLjAxNi4zIDAgLjA0OS0uMDA4LjA4NC0uMDA4LjEzNnYxMjcuOTk2YTggOCAwIDAgMCA4IDhoMTI4YTcuOTY2IDcuOTY2IDAgMCAwIDUuMTEtMS44NDZ6bTM0Ljg5LTQ5LjktMzIgMjYuNjY2di0xMDYuNjM5bDMyLTIxLjMzM3ptLTQ4IDM1Ljc0NmgtMTEydi0xMTJoMzJ2NDhhOCA4IDAgMCAwIDggOGgzMmE4IDggMCAwIDAgOC04di00OGgzMnptLTY0LTcydi00MGgxNnY0MHptLTI5LjU3OC01NiAyNC0xNmg5OS4xNTZsLTI0IDE2eiIvPjxwYXRoIGQ9Im0yMjQgMjk2aC0xNmE4IDggMCAwIDAgMCAxNmgxNmE4IDggMCAwIDAgMC0xNnoiLz48cGF0aCBkPSJtMjQ4IDMwNGE4IDggMCAwIDAgOCA4aDhhOCA4IDAgMCAwIDAtMTZoLThhOCA4IDAgMCAwIC04IDh6Ii8+PGNpcmNsZSBjeD0iMjU2IiBjeT0iMzg0IiByPSI4Ii8+PGNpcmNsZSBjeD0iMjI0IiBjeT0iMzg0IiByPSI4Ii8+PGNpcmNsZSBjeD0iMjg4IiBjeT0iMzg0IiByPSI4Ii8+PC9nPjwvc3ZnPg==" /></div>
+                <div class="s_right04">             
+                    <p style="padding-top: 70px;" class="s_title04">반송주소/택배사(CJ대한통운)</p>
+                    <P>1) <span>인청광역시 계양구 아나지로 24, 제이에스빌딩 5층 지에이글로벌</span></P>
+                </div>
+            </div>
+            <div class="service05">
+                <div class="s_left05"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zNjYsMzk2Yy01LjUyLDAtMTAsNC40OC0xMCwxMGMwLDUuNTIsNC40OCwxMCwxMCwxMGM1LjUyLDAsMTAtNC40OCwxMC0xMEMzNzYsNDAwLjQ4LDM3MS41MiwzOTYsMzY2LDM5NnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTM5MC42MjIsMzYzLjY2M2wtNDcuNTMtMTUuODRsLTE3LjA2My0zNC4xMjdjMTUuMzcyLTE1LjY0NiwyNi4wNDUtMzYuMzQ4LDI5LjY0NC01Ny45NDFMMzU3LjgwMSwyNDNIMzc2DQoJCQljMTYuNTQyLDAsMzAtMTMuNDU4LDMwLTMwdi02M0M0MDYsNjcuMjksMzM4LjcxLDAsMjU2LDBjLTgyLjkyMiwwLTE1MCw2Ny4wOTctMTUwLDE1MHY2M2MwLDEzLjAzNiw4LjM2MSwyNC4xNTIsMjAsMjguMjhWMjUzDQoJCQljMCwxNi41NDIsMTMuNDU4LDMwLDMwLDMwaDguNzgyYzQuMzM1LDkuNDE3LDkuOTQ2LDE4LjEzOSwxNi43NzQsMjUuOTc0YzEuNDE2LDEuNjI4LDIuODkzLDMuMjA2LDQuNDA2LDQuNzQxbC0xNy4wNTQsMzQuMTA4DQoJCQlsLTQ3LjUzMSwxNS44NDFDNjYuMTEyLDM4Mi4wOTIsMjYsNDQwLjI3MSwyNiw1MDJjMCw1LjUyMyw0LjQ3NywxMCwxMCwxMGg0NDBjNS41MjIsMCwxMC00LjQ3NywxMC0xMA0KCQkJQzQ4Niw0NDAuMjcxLDQ0NS44ODksMzgyLjA5MiwzOTAuNjIyLDM2My42NjN6IE0zODYsMjEzYzAsNS41MTQtNC40ODYsMTAtMTAsMTBoLTE1LjI2MmMyLjU0Mi0xOS42OSw0LjIzNi00MC42NDMsNC45MTctNjEuMjgNCgkJCWMwLjAyLTAuNTgyLDAuMDM2LTEuMTQ4LDAuMDU0LTEuNzJIMzg2VjIxM3ogTTEzNiwyMjNjLTUuNTE0LDAtMTAtNC40ODYtMTAtMTB2LTUzaDIwLjI5OGMwLjAzMywxLjA0MywwLjA2OCwyLjA5MSwwLjEwNywzLjE0Ng0KCQkJYzAuMDAxLDAuMDM2LDAuMDAzLDAuMDcxLDAuMDA0LDAuMTA3YzAsMC4wMDMsMCwwLjAwNiwwLDAuMDA5YzAuNywyMC4wNzIsMi4zNzIsNDAuNDgxLDQuODU2LDU5LjczN0gxMzZWMjIzeiBNMTU2LDI2Mw0KCQkJYy01LjUxNCwwLTEwLTQuNDg2LTEwLTEwdi0xMGg4LjE5OGwyLjEyOCwxMi43NTljMC40MDYsMi40MjUsMC45MDUsNC44NDEsMS40ODIsNy4yNDFIMTU2eiBNMTQ2LjAxNywxNDBIMTI2LjM4DQoJCQlDMTMxLjQ0NSw3Mi45NzksMTg3LjM3NywyMCwyNTYsMjBjNjguMzE4LDAsMTI0LjQ5Niw1Mi45NzIsMTI5LjYxOSwxMjBoLTE5LjYzNWMtMC43Mi01NS4yMjctNDUuNjkzLTEwMC0xMDEuMDMzLTEwMGgtMTcuOQ0KCQkJQzE5MS43MTIsNDAsMTQ2LjczNiw4NC43NzMsMTQ2LjAxNywxNDB6IE0yNDcuMDUsNjBoMTcuOWM0NC44MDksMCw4MS4wNzYsMzYuNjUxLDgxLjA1LDgxLjQxYzAsMy4xNDctMC4wMjUsNS44ODctMC4wNzgsOC4zOA0KCQkJYzAsMC4wMzItMC4wMDEsMC4wNjUtMC4wMDEsMC4wOThsLTEyLjUwOC0xLjc4N2MtMzMuOTgtNC44NTItNjYuMDY0LTIwLjg5NC05MC4zNDItNDUuMTcyQzI0MS4xOTUsMTAxLjA1NCwyMzguNjUyLDEwMCwyMzYsMTAwDQoJCQljLTI2Ljg1NiwwLTUyLjU2NCwxMi4yMzYtNjkuNTU4LDMyLjkwOEMxNzAuNjMsOTIuMTg5LDIwNS4wNTMsNjAsMjQ3LjA1LDYweiBNMTc4LjU0LDI2M2MtNS4wMDYtMTYuNjUzLTEwLjczNC02NS42NTMtMTItOTcuMDUzDQoJCQlsMTMuNDU5LTE3Ljk0NmMxMi4zNjEtMTYuNDc2LDMxLjU5Mi0yNi43MTMsNTIuMDQ5LTI3Ljg4OGMyNi45MTcsMjUuNjE2LDYxLjczOSw0Mi41MzIsOTguNTM3LDQ3Ljc4NmwxNC43MjIsMi4xMDQNCgkJCWMtMC45ODQsMjAuODg1LTIuOTk1LDQxLjg0My01Ljg3Niw2MS4xMThjLTAuMDAxLDAuMDA2LTAuMDAyLDAuMDEzLTAuMDAzLDAuMDJjLTAuOTE2LDYuMTk3LTEuNjM4LDEwLjE4NS0zLjQ4MiwyMS4zMjQNCgkJCWMtNS4yOTYsMzEuNzY1LTI4Ljk5OCw2MC40OS02MC4yODcsNjguMzEzYy0xMi44NzcsMy4yMTUtMjYuNDQzLDMuMjE0LTM5LjMxMywwYy0xOS41MzctNC44ODQtMzcuNDUxLTE4LjQwMi00OS4wMTItMzcuNzc4DQoJCQloMjAuMzg2YzQuMTI4LDExLjYzOSwxNS4yNDMsMjAsMjguMjgsMjBoMjBjMTYuNTc1LDAsMzAtMTMuNDI0LDMwLTMwYzAtMTYuNTQyLTEzLjQ1OC0zMC0zMC0zMGgtMjANCgkJCWMtMTMuMzI3LDAtMjQuMjc4LDguNjA4LTI4LjI5NywyMEgxNzguNTR6IE0yMzUuMTU5LDM0MS4wMTZjNi44NTksMS40NDUsMTMuODUyLDIuMTg0LDIwLjg0MSwyLjE4NA0KCQkJYzUuNDcxLDAsMTAuOTQzLTAuNDU4LDE2LjM1My0xLjM0NmwtMTcuNjcsMTguNjg3TDIzNS4xNTksMzQxLjAxNnogTTI0MC45MzUsMzc1LjA3OWwtMzEuNzE4LDMzLjU0Mg0KCQkJYy04LjczMi0xNi43MTQtMTYuMjM1LTM0LjEwOS0yMi4zODktNTEuOTE3bDExLjkxMS0yMy44MjJMMjQwLjkzNSwzNzUuMDc5eiBNMzExLjU2NiwzMjkuNDk0bDEzLjYwNCwyNy4yMDkNCgkJCWMtNi4xNjQsMTcuODM4LTEzLjY2OSwzNS4yMzktMjIuMzkyLDUxLjkzM2wtMzMuOTQ4LTMzLjk0OEwzMTEuNTY2LDMyOS40OTR6IE0yMjYsMjczYzAtNS41MjEsNC40NzgtMTAsMTAtMTBoMjANCgkJCWM1LjUxNCwwLDEwLDQuNDg2LDEwLDEwYzAsNS41MjItNC40NzksMTAtMTAsMTBoLTIwQzIzMC40ODYsMjgzLDIyNiwyNzguNTE0LDIyNiwyNzN6IE00Ni40LDQ5Mg0KCQkJYzMuOTYzLTQ5LjUzOSwzNi45MzItOTQuNTY3LDgxLjMwMi0xMDkuMzYzbDQyLjA5NC0xNC4wMjhjNy43MTIsMjEuMzI1LDE3LjI2Niw0Mi4wNTIsMjguNDYzLDYxLjc0DQoJCQljMC4wMTksMC4wMzQsMC4wMzcsMC4wNjgsMC4wNTYsMC4xMDFjMCwwLjAwMSwwLjAwMSwwLjAwMSwwLjAwMSwwLjAwMmM4LjE4MSwxNC4zODksMTcuMzg5LDI4LjQ1LDI3LjM3Miw0MS43OTlMMjM3Ljk5LDQ5Mkg0Ni40eg0KCQkJIE0yNTYsNDgzLjA4NmwtMTMuNTYyLTIxLjc3M2MtMC4xNTItMC4yNDQtMC4zMTQtMC40ODEtMC40ODYtMC43MTFjLTguMDk4LTEwLjgwMi0xNS42NTItMjIuMDk5LTIyLjUzMi0zMy42NjJsMzUuNjYzLTM3LjcxNA0KCQkJbDM3LjU3OCwzNy41NzhjLTYuOTI2LDExLjY0Ny0xNC41MDYsMjIuOTkxLTIyLjYxMSwzMy43OTZDMjY5LjU2LDQ2MS4yNTMsMjcwLjI1NSw0NjAuMjI0LDI1Niw0ODMuMDg2eiBNMjc0LjAxLDQ5Mg0KCQkJbDEyLjMwMS0xOS43NDhjMTAuMDI3LTEzLjQsMTkuMzAxLTI3LjU3NCwyNy41NjQtNDIuMTMyYzAuMDUtMC4wODgsMC4wOTctMC4xNzgsMC4xNDctMC4yNjZjMC4wMDYtMC4wMTEsMC4wMTItMC4wMjEsMC4wMTgtMC4wMzINCgkJCWMxMS4wNTUtMTkuNSwyMC41MDktNDAuMDQ3LDI4LjE2NC02MS4yMTNsNDIuMDkzLDE0LjAyOGM0NC4zNzEsMTQuNzk2LDc3LjM0LDU5LjgyNCw4MS4zMDMsMTA5LjM2M0gyNzQuMDF6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00MzUuNTQ2LDQ1MS41MzFjLTYuNjgzLTEzLjM3Ny0xNi40NzItMjUuMjYxLTI4LjMwOS0zNC4zNjdjLTQuMzc4LTMuMzY5LTEwLjY1Ni0yLjU1LTE0LjAyMywxLjgyOA0KCQkJYy0zLjM2OCw0LjM3OC0yLjU0OSwxMC42NTYsMS44MjgsMTQuMDI0YzkuNDU0LDcuMjczLDE3LjI3MiwxNi43NjYsMjIuNjExLDI3LjQ1M2MyLjQ3Myw0Ljk0OSw4LjQ4Myw2Ljk0MSwxMy40MTUsNC40NzcNCgkJCUM0MzYuMDA4LDQ2Mi40NzgsNDM4LjAxMyw0NTYuNDcyLDQzNS41NDYsNDUxLjUzMXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" /></div>
+                <div class="s_right05">
+                    <p style="padding-top: 55px;" class="s_title05">고객센터 및 운영시간</p>
+                    <p>1) <span>평일 10:00 ~ 17:00</span> (주말,공휴일 휴무)</p>
+                    <p>2) TEL : <span>010-2973-2334</span></p>
+                    <p>3) 통화 불가시 <span>문의 게시판</span> 이용을 부탁드립니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p style="font-size: 22px;">지에이글로벌</p><br>
+        <p style="margin-top: -10px;">주소 : 경기도 부천시 부천로208번길 54 지하 1층</p><br>
+        <p style="margin-top: -10px;">대표 : 김건아</p>&nbsp;&nbsp;<p style="margin-top: -10px;">사업자등록번호 : 547-05-01162</p>
+         <a style="color: red;" href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5470501162&apv_perm_no=">
+            <p>사업자 정보확인</p>
+        </a>
+        <p>통신판매업신고번호 : 2018-서울용산-0758</p>&nbsp;&nbsp;&nbsp;<p>개인정보관리자 : 김건아</p><br>
+        <p style="margin-top: -25px;">대표번호 : <span>031-710-1660</span></p>&nbsp;&nbsp;&nbsp;<p style="margin-top: -25px;">팩스번호 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>메일 : kga7777@naver.com</p>&nbsp;&nbsp;&nbsp;&nbsp;<p>호스팅제공 : 엔에이치엔고도(주)</p><br>
+        <p style="margin-top: -25px;">copyright (c) <span>ga-global.co.kr&nbsp;&nbsp;&nbsp;</span>all rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
